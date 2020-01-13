@@ -29,7 +29,7 @@ const Project = props => {
     const decreace = index => index > 0 ? setIndex(prevIndex => prevIndex - 1) : null;
 
     const project = data.projects.map(project => (
-        project.id === id ?
+        project.id.toLowerCase() === id ?
             <Fragment key={uuid.v4()}>
                 <div id="project-header">
                     {/* if there is logo, render logo */}

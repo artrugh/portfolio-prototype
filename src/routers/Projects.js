@@ -21,8 +21,8 @@ const Projects = props => {
     const projects = data.projects.map(project => (
 
         <figure key={uuid.v4()} id={project.id}>
-            <Link to={`/projects/${project.id}`}
-                className={project.id}
+            <Link to={`/projects/${project.id.toLowerCase()}`}
+                className={project.id.toLowerCase()}
                 onClick={props.button}>
                 <img
                     className="project-main-image"
@@ -33,7 +33,7 @@ const Projects = props => {
                 <h2>{project.id}</h2>
                 <p>{project.short_description}</p>
             </figcaption>
-            <Link className="button-project" to={`/projects/${project.id}`}
+            <Link className="button-project" to={`/projects/${project.id.toLowerCase()}`}
                 onClick={props.button}>
                 SEE MORE</Link>
         </figure>
