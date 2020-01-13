@@ -1,0 +1,37 @@
+.lateral-bar {
+
+    display: flex;
+    flex-direction: column;
+    width: 40px;
+    position: absolute;
+    margin: 5px 10px;
+
+    div {
+        display: flex;
+        margin: 2px;
+        justify-content: space-between;
+
+        .spot {
+            width: 8px;
+            height: 8px;
+            position: relative;
+            bottom: -3px;
+            border-radius: 50px;
+            background-color: $back-ground;
+        }
+
+        p {
+            font-size: 1em;   
+            font-family: $code-font;
+            color: $grey-fonts;
+            width: 20px;
+            text-align: right;
+        }
+
+        &:hover {
+            .spot {
+                background-color: $red;
+            }
+        }
+    }
+}

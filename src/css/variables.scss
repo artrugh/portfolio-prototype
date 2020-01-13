@@ -1,0 +1,79 @@
+//font
+
+$code-font:'Ubuntu Mono',
+monospace;
+
+$arial: "arial";
+
+$roboto-font: "'Roboto Condensed', sans-serif";
+
+$font2:'Inconsolata',
+monospace;
+
+$font3: 'Fira Sans', sans-serif;
+
+//color
+
+$back-ground: #1e1e1e;
+$grey-icon: #333333;
+$grey-menu: #252526;
+$grey-list: #2d2d2d;
+$grey-cards: #181818;
+$grey-form: #3c3c3c;
+$grey-lateral: #575757;
+$grey-fonts: #969696;
+$yellow: #d6b980;
+$yellow-js: #cbca4d;
+$yellow-light: #dcdba3;
+$orange-index: #df773c;
+$orange: #cd8c56;
+$pink: #C487bf;
+$pink-sass: #f26b94;
+$light-blue: #9eddfc;
+$blue-class: #b0e3fc;
+$blue-files: #3d96f5;
+$blue-footer: #127cc9;
+$blue: #75acdb;
+$white: #ffffff;
+$dark-white:#d4d4d4;
+$green-dark: #6b9858;
+$green-light: #b6cda9;
+$green-files: #53ab64;
+$violet-photo: #9f76c2;
+$red: #860202;
+
+// media 
+
+$xs: 400px;
+$sm:500px;
+$md: 767px;
+$lg: 1023px;
+$xl: 1360px;
+
+
+@function pow($number, $exponent) {
+    $value: 1;
+
+    @if $exponent>0 {
+        @for $i from 1 through $exponent {
+            $value: $value * $number;
+        }
+    }
+
+    @return $value;
+}
+
+@mixin margin-top ($mult, $exponent) {
+
+    margin-top: $mult * pow(1.0488, $exponent);
+    // 400px-500px
+    @media only screen and (min-width: $xs) and (max-width: $sm) {
+        margin-top: $mult * pow(1.183, $exponent);
+        // 1.4
+    }
+    // tablet  +500px
+    @media only screen and (min-width: $sm) {
+        margin-top: $mult * pow(1.360, $exponent);
+        // 1.85
+    }
+}

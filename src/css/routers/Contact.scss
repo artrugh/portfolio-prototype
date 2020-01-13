@@ -1,0 +1,85 @@
+// Contact Styles
+#contact {
+
+    form {
+        padding-left: 5em;
+
+        legend {
+            padding: 1.8em 0;
+            font-family: $code-font;
+            font-size: 1.5em;
+            color: $blue;
+
+            &::before {
+                content: '< ';
+                color: $grey-fonts;
+            }
+
+            &::after {
+                content: ' />';
+                color: $grey-fonts;
+            }
+        }
+
+        fieldset {
+            border: none;
+
+            p {
+                display: inline;
+                padding-right: 0.7em;
+                padding-bottom: 1em;
+                color: $dark-white;
+            }
+
+            p:nth-child(1) {
+                color: $pink;
+            }
+
+            p:nth-child(2) {
+                color: $blue-files;
+            }
+
+            p:nth-child(3) {
+                color: $light-blue;
+            }
+
+            label {
+                padding: 0.7em 1.5em;
+                display: block;
+                color: $light-blue;
+
+                input {
+                    display: inline;
+                    padding-left: 3px;
+                    margin-left: 7px;
+                    background-color: $back-ground;
+                    border: none;
+                    font-size: 1em;
+                    color: $orange;
+                    // width: 80%;
+                }
+            }
+
+            .name {
+                margin-top: 1.5em;
+            }
+        }
+
+        button {
+            background-color: $grey-form;
+            border-radius: 5px;
+            border: none;
+            margin-right: 2.2em;
+            margin-top: 2.2em;
+            padding: 10px;
+
+            p {
+                font-size: 1.5em;
+
+                &:hover {
+                    color: $yellow-js;
+                }
+            }
+        }
+    }
+}

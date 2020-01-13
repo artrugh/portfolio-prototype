@@ -1,26 +1,35 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+//Routers
+import Home from './routers/Home';
+import About from './routers/About';
+import Projects from './routers/Projects';
+import Project from './routers/Project';
+import Contact from './routers/Contact';
+import NotFound from './routers/NotFound';
+
+//Components
+import Header from './components/Header';
+import SocialNets from './components/SocialNets';
+import Footer from './components/Footer';
+
+const App = () => {
+    return (
+            <BrowserRouter>
+                <SocialNets />
+                <Header />
+                <Switch>
+                    <Route exact path="/" component={Home} />
+                    <Route path="/about" component={About} />
+                    <Route exact path="/projects" component={Projects} />
+                    <Route exact path="/projects/:id" component={Project} />
+                    <Route path="/contact" component={Contact} />
+                    <Route component={NotFound} />
+                </Switch>
+                <Footer />
+            </BrowserRouter>
+    );
 }
 
 export default App;

@@ -1,0 +1,20 @@
+#logo {
+    width: 30px;
+    // margin: 12px 0 5px 0;
+    color: $red;
+    // font-size: 2em;
+    padding: 15px 10px;
+    margin-top: 10px;
+
+    .st0 {
+        fill: $dark-white;
+    }
+
+    &:hover {
+        border-left: 2px solid $white;
+        margin-left: 0px;
+        .st0 {
+            fill: $white;
+        }
+    }
+}

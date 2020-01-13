@@ -1,0 +1,75 @@
+// About Styles
+
+#about {
+    
+    .content {
+
+
+        padding-left: 4.7em;
+        padding-right: 4em;
+        padding-top: 2em;
+
+        h2 {
+            padding-bottom: 1em;
+            color: $blue;
+            font-size: 1.2em;
+
+            &::before {
+                content: '<';
+                color: $grey-fonts;
+            }
+
+            &::after {
+                content: '>';
+                color: $grey-fonts;
+            }
+        }
+
+        .bar {
+            .second span:last-child {
+                padding-left: 1em ;  
+            }
+            p {
+                padding: 7px 0;
+                color: $blue;
+            }
+
+            .white {
+                color: $grey-form;
+            }
+
+            
+
+            &:hover{
+
+                .white{
+                    color: $grey-fonts;   
+                }
+                .HTML {
+                    color: $orange-index
+                }
+    
+                .javaScript {
+                    color: $yellow-js
+                }
+    
+                .CSS {
+                    color: $pink-sass
+                }
+    
+                .nodeJs {
+                    color: $green-files
+                }
+    
+                .mongoDB {
+                    color: $violet-photo
+                }
+    
+                .React {
+                    color: $blue-files
+                }
+                
+            }
+        }
+    }
+}

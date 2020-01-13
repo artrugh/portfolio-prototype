@@ -1,0 +1,83 @@
+// Footer Style
+
+footer {
+    background-color: $blue-footer;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    z-index: 2;
+    display: flex;
+    justify-content: space-between;
+    // align-items: center;
+    margin-top: 1em;
+    text-align: end;
+
+    p {
+        color: $white;
+        text-align: end;
+        margin: 0;
+        font-weight: lighter;
+        font-size: 0.7em;
+        text-align: end;
+        display: flex;
+        align-items: center;
+
+        @media only screen and (min-width: $sm) {
+            font-size: 1em;
+        }
+    }
+
+    #cv {
+
+        padding: 3px 6px 3px 2px;
+
+        &:hover {
+            background-color: lighten($color: $blue-footer, $amount: 20)
+        }
+
+        a {
+            margin: 0;
+            padding: 0;
+
+            i {
+                padding: 0 6px 0 2px;
+                @media only screen and (max-width: $xs) {
+                    font-size: 0.7em;
+                }
+            }
+        }
+    }
+
+    #mail-phone {
+
+        padding-right: 6px;
+
+        span {
+            text-align: end;
+            font-size: 1em;
+            margin: 0 4px;
+            text-align: end;
+            display: flex;
+            align-items: center;
+            height: 100%;
+            padding-right: 6px;
+            font-weight: lighter;
+
+            &:hover {
+                background-color: lighten($color: $blue-footer, $amount: 20)
+            }
+
+            i {
+                padding: 0 8px 0 8px;
+                @media only screen and (max-width: $xs) {
+
+                    font-size: 0.7em;
+
+                    &:first-child {
+                        padding-left: 4px;
+                    }
+                }
+            }
+        }
+    }
+}
