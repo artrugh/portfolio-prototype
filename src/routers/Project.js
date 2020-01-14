@@ -50,7 +50,7 @@ const Project = props => {
                                 className="project-repo"
                                 rel="noopener noreferrer"
                                 target="_blank">
-                                <i className="fab fa-github-square"></i>
+                                <i class="fab fa-git-alt"></i>
                                 {project.repository.length > 1 ? "REPO" : "NOT AVAILABLE"}
                             </a>
                             <div className="state-indicator">{project.state}</div>
