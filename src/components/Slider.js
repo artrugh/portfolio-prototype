@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router-dom';
 
 const Slider = props => {
 
@@ -20,11 +21,14 @@ const Slider = props => {
             className="img-container"
             style={{ position: "relative" }}
         >
-            <img
-                src={require(`./../assets/${props.project.img[props.index]}`)}
-                className="img-slider"
-                alt="project"
-            />
+            <Link to="/projects">
+                <img
+                    src={require(`./../assets/${props.project.img[props.index]}`)}
+                    className="img-slider"
+                    alt="project"
+                    onMouseOver={e => e.target.style.cursor = "url('https://img.icons8.com/ios/50/ffffff/delete-sign.png'), auto"}
+                />
+            </Link>
             <svg
                 onClick={e => props.slider(e, props.project.img.length)}
                 ref={arrowLeft}
