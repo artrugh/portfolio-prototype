@@ -37,13 +37,13 @@ const Project = props => {
                     <div className="project-info">
                         <div className="titles">
                             <h1 className="project-name">{project.id}</h1>
-                            <a href={project.web_site}
+                            <a href={project.website}
                                 key={uuid.v4()}
                                 className="project-link"
                                 rel="noopener noreferrer"
                                 target="_blank">
                                 <i className="fas fa-link"></i>
-                                {project.web_site.length > 1 ? "WEB-SITE" : "NOT AVAILABLE"}
+                                {project.website.length > 1 ? "WEBSITE" : "NOT AVAILABLE"}
                             </a>
                             <a href={project.repository}
                                 key={uuid.v4()}

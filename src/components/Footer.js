@@ -13,7 +13,7 @@ const Footer = () => {
                 <span>
                     <i className="far fa-envelope"></i>arturo.rugh@gmail.com</span>
                 <span>
-                    <i className="fas fa-phone"></i>034--xx-xxx-66</span>
+                    <i className="fas fa-phone"></i>+49 15-773-789-961</span>
             </p>
         </footer>
     )
