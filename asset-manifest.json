@@ -1,0 +1,38 @@
+{
+  "files": {
+    "main.css": "/portfolio/static/css/main.8ec4c82e.chunk.css",
+    "main.js": "/portfolio/static/js/main.0da475b8.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.0da475b8.chunk.js.map",
+    "runtime-main.js": "/portfolio/static/js/runtime-main.5cec9bc0.js",
+    "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cec9bc0.js.map",
+    "static/css/2.67eb4ace.chunk.css": "/portfolio/static/css/2.67eb4ace.chunk.css",
+    "static/js/2.042c7659.chunk.js": "/portfolio/static/js/2.042c7659.chunk.js",
+    "static/js/2.042c7659.chunk.js.map": "/portfolio/static/js/2.042c7659.chunk.js.map",
+    "index.html": "/portfolio/index.html",
+    "precache-manifest.83e9c31fe3dc30f831f0afaa6e7d6a1f.js": "/portfolio/precache-manifest.83e9c31fe3dc30f831f0afaa6e7d6a1f.js",
+    "service-worker.js": "/portfolio/service-worker.js",
+    "static/css/2.67eb4ace.chunk.css.map": "/portfolio/static/css/2.67eb4ace.chunk.css.map",
+    "static/css/main.8ec4c82e.chunk.css.map": "/portfolio/static/css/main.8ec4c82e.chunk.css.map",
+    "static/js/2.042c7659.chunk.js.LICENSE": "/portfolio/static/js/2.042c7659.chunk.js.LICENSE",
+    "static/media/banca0.png": "/portfolio/static/media/banca0.eb40abbe.png",
+    "static/media/banca1.png": "/portfolio/static/media/banca1.806d5835.png",
+    "static/media/banca2.png": "/portfolio/static/media/banca2.f75c2edb.png",
+    "static/media/all.css": "/portfolio/static/media/fa-solid-900.f6121be5.woff2",
+    "static/media/logo_black.svg": "/portfolio/static/media/logo_black.54b6d289.svg",
+    "static/media/logo_mask_white.svg": "/portfolio/static/media/logo_mask_white.5820fad0.svg",
+    "static/media/logo_white.svg": "/portfolio/static/media/logo_white.c38ea6f8.svg",
+    "static/media/personal0.png": "/portfolio/static/media/personal0.828bcf7e.png",
+    "static/media/personal1.png": "/portfolio/static/media/personal1.0fc5f485.png",
+    "static/media/subiendo0.png": "/portfolio/static/media/subiendo0.e29e5299.png",
+    "static/media/subiendo_logo.svg": "/portfolio/static/media/subiendo_logo.bc5fd0a9.svg",
+    "static/media/webpack-icon.svg": "/portfolio/static/media/webpack-icon.837b970d.svg",
+    "static/media/x.svg": "/portfolio/static/media/x.64a4459e.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.5cec9bc0.js",
+    "static/css/2.67eb4ace.chunk.css",
+    "static/js/2.042c7659.chunk.js",
+    "static/css/main.8ec4c82e.chunk.css",
+    "static/js/main.0da475b8.chunk.js"
+  ]
+}
