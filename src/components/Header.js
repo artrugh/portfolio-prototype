@@ -12,11 +12,11 @@ const Header = props => {
     // manage the document.title pushing the project title
     const refresh = () => {
         if (window.location.href[window.location.href.length - 1]
-            !== "/" && window.location.href.split("/").length === 4) {
-            const title = window.location.href.split("/")[3];
+            !== "/" && window.location.href.split("/").length === 5) {
+            const title = window.location.href.split("/")[4];
             return title
         } else if (window.location.href[window.location.href.length - 1]
-            === "/" && window.location.href.split("/").length === 4) {
+            === "/" && window.location.href.split("/").length === 5) {
             const title = "home"
             return title
         }
