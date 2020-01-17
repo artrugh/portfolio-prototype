@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import { HashRouter, Route, Switch } from 'react-router-dom';
 
 //Routers
 import Home from './routers/Home';
@@ -16,7 +16,7 @@ import Footer from './components/Footer';
 
 const App = () => {
     return (
-            <BrowserRouter>
+            <HashRouter>
                 <SocialNets />
                 <Header />
                 <Switch>
@@ -28,7 +28,7 @@ const App = () => {
                     <Route component={NotFound} />
                 </Switch>
                 <Footer />
-            </BrowserRouter>
+            </HashRouter>
     );
 }
 
