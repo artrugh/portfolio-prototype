@@ -10,13 +10,17 @@ const Header = props => {
         props.history.push("/projects");
     };
     // manage the document.title pushing the project title
+    // take care in this function/ for gitHub deployment it is important to
+    // increase one the number because of the # git uses in the url
+    // so instead of 5 - 4 should be 6 - 5
+    // remember to change it if the web is deployed in another host
     const refresh = () => {
         if (window.location.href[window.location.href.length - 1]
-            !== "/" && window.location.href.split("/").length === 5) {
-            const title = window.location.href.split("/")[4];
+            !== "/" && window.location.href.split("/").length === 6) {
+            const title = window.location.href.split("/")[5];
             return title
         } else if (window.location.href[window.location.href.length - 1]
-            === "/" && window.location.href.split("/").length === 5) {
+            === "/" && window.location.href.split("/").length === 6) {
             const title = "home"
             return title
         }
