@@ -16,8 +16,8 @@
 @import './routers/NotFound';
 
 // font-family: -apple-system, system-ui, BlinkMacSystemFont, 
-  //            'Segoe UI', Roboto, 'Helvetica Neue', 
-  //            Ubuntu, Arial, sans-serif;
+//            'Segoe UI', Roboto, 'Helvetica Neue', 
+//            Ubuntu, Arial, sans-serif;
 
 * {
   padding: 0;
@@ -34,31 +34,22 @@ body {
   max-width: 1400px;
 }
 
-li {
-  list-style: none;
-  margin: 0;
-}
-
-a {
-  text-decoration: none;
-  color: $white;
-}
-
 .container {
   min-width: 230px;
-  margin-left: 2.8em;
-  @include margin-top(1em, 2);
+  max-width: 1300px;
+  margin-left: 3.4em;
+  margin-top: 2.7em;
 }
 
 // Scroll bar
 ::-webkit-scrollbar {
-  width: 1em; 
+  width: 1em;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
   background-color: $back-ground;
-  border: 0.5px solid $grey-lateral; 
+  border: 0.5px solid $grey-lateral;
 }
 
 /* Handle */
@@ -69,5 +60,5 @@ a {
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background:$grey-lateral
+  background: $grey-lateral
 }

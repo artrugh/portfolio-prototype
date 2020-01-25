@@ -14,7 +14,7 @@ import Header from './components/Header';
 import SocialNets from './components/SocialNets';
 import Footer from './components/Footer';
 
-const App = () => {
+const App = () => {  
     return (
             <HashRouter>
                 <SocialNets />

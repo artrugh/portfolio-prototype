@@ -4,56 +4,32 @@ export const data = {
         {
             id: "logo",
             path: "/",
-            icon: "logo_white.svg",
-            active: false
+            icon: "logo_white.svg"
         },
         {
             id: "github",
             path: "https://github.com/artrugh",
-            icon: "fab fa-github-alt",
-            active: false
+            icon: "fab fa-github-alt"
         },
         {
             id: "codepen",
             path: "https://codepen.io/artrugh/",
-            icon: "fab fa-codepen",
-            active: false
+            icon: "fab fa-codepen"
         },
         {
             id: "linkedin",
             path: "https://www.linkedin.com/in/arturorugh/",
-            icon: "fab fa-linkedin",
-            active: false
+            icon: "fab fa-linkedin"
         }
     ],
 
-    header: [
-        {
-            id: "project",
-            active: false
-        },
-        {
-            id: "home",
-            active: false
-        },
-        {
-            id: "about",
-            active: false
-        },
-        {
-            id: "projects",
-            active: false
-        },
-        {
-            id: "contact",
-            active: false
-        }
-    ], projects: [
+    header: ["project", "about", "projects", "contact"],
+    projects: [
         {
             id: "Subiendo_al_Sur",
             short_description: "SUALSUR is an NGO focusing on social and educational projects.",
             long_description: "SUALSUR is an educational project aimed at creating a dialogue between university students and residents of rural communities. The goal of the program is for young people from various countries and disciplines to travel to rural communities and interact on a social and cultural level.",
-            logo: "data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' version='1.1' id='subiendo_logo' x='0px' y='0px' viewBox='-257.7 409.6 245 30.7' style='enable-background:new -257.7 409.6 245 30.7;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23BD4136;%7D .st1%7Bfill:%231E1E1E;%7D .st2%7Bfill:%23A98A58;%7D%0A%3C/style%3E%3Cpolygon id='XMLID_22_' class='st0' points='-115.8,417.8 -114.6,436.8 -129.5,436.8 -130.5,418.5 '/%3E%3Cpolygon id='XMLID_9_' class='st1' points='-126.1,431.4 -126.1,422.3 -119.7,421.6 -118.8,431.4 '/%3E%3Cpolygon id='XMLID_21_' class='st0' points='-256.9,432.7 -255.6,439.5 -237.1,439.5 -237.9,423.5 -252.1,424.6 -251.9,416.8 -240.3,415.9 -240.2,418.4 -237.1,418.2 -236.5,411.1 -256.9,411.7 -257.7,428.6 -243.9,428 -243.4,435.5 -252.3,436 -253,432.9 '/%3E%3Cpolygon id='XMLID_20_' class='st0' points='-256.9,432.7 -255.6,439.5 -237.1,439.5 -237.9,423.5 -252.1,424.6 -251.9,416.8 -240.3,415.9 -240.2,418.4 -237.1,418.2 -236.5,411.1 -256.9,411.7 -257.7,428.6 -243.9,428 -243.4,435.5 -252.3,436 -253,432.9 '/%3E%3Cpolygon id='XMLID_19_' class='st0' points='-233.8,415.3 -234.6,436.8 -217.5,436.8 -218.1,417.4 -221.9,418.2 -221,431.2 -229.2,432.7 -230.9,414.7 '/%3E%3Cpolygon id='XMLID_18_' class='st0' points='-222.8,429.3 -224.2,419.2 -226.7,418.2 -226.7,429.8 '/%3E%3Cpolygon id='XMLID_17_' class='st0' points='-215.2,410.4 -214.6,438.5 -197.7,438.5 -197.7,432.1 -199.8,420.7 -209.7,422.7 -210.9,411.7 '/%3E%3Cpolygon id='XMLID_16_' class='st1' points='-203.1,433.9 -204.2,424.4 -209.3,425.3 -209.3,434.7 '/%3E%3Cpolygon id='XMLID_15_' class='st0' points='-195.1,420.8 -195.1,436.8 -188.7,436.8 -190.4,420.1 '/%3E%3Crect id='XMLID_14_' x='-195.1' y='411.1' class='st0' width='6.3' height='5.5'/%3E%3Cpolygon id='XMLID_13_' class='st0' points='-186.8,420.1 -184.8,437.4 -172.5,437.4 -172.5,434.7 -180.6,433.8 -180.9,430.8 -178.5,430.8 -174.6,430.1 -171.8,430.4 -171.2,423.1 -170,421.9 -171.8,419.1 '/%3E%3Cpolygon id='XMLID_11_' class='st0' points='-167.5,436.8 -168.5,417.3 -162.6,418 -156.6,427.1 -156.6,415.6 -153,415.6 -153,436.8 -156.2,436.8 -163.4,426.2 -162.4,436.8 '/%3E%3Cpolygon id='XMLID_10_' class='st0' points='-140.3,425.3 -143.7,424.6 -145.1,432.3 -138.3,433 -140.2,411.1 -135.2,409.6 -132.2,438.5 -148.7,438.5 -150.1,430 -149,422.3 -140.2,422.9 '/%3E%3Cpolygon id='XMLID_12_' class='st1' points='-176.3,428.3 -180.9,428.3 -181.5,422.3 -176.3,422.3 '/%3E%3Cpolygon id='XMLID_4_' class='st0' points='-36.1,428.9 -39.2,429.3 -40.4,417.2 -39.2,417.2 '/%3E%3Cg%3E%3Cpolygon id='XMLID_8_' class='st2' points='-101,423.8 -98.5,424.4 -98.5,422.9 -92.2,422 -92.2,434.4 -97.8,434.4 -98.3,430.7 -96,430.8 -95.6,431.8 -93.6,431.8 -93.6,427.7 -101.5,426.9 -101.5,438.4 -86.9,438.4 -87.7,418.1 -100.9,419.5 '/%3E%3Cpolygon id='XMLID_7_' class='st2' points='-85,411.9 -84.4,438.8 -75.1,438.8 -75.1,436.2 -79.5,435.7 -80,412.4 '/%3E%3Cpolygon id='XMLID_6_' class='st0' points='-66.7,431.2 -66.7,440.3 -48.4,440.3 -50.1,423.8 -62.1,424.9 -63,418.6 -53.2,418.6 -52.9,420.2 -50.3,420.1 -50.5,412.4 -67.3,413.7 -66.3,428.7 -54.4,428.7 -53.5,435.1 -61.7,436.8 -62.5,434.1 -57.8,433.1 -58.7,430.1 '/%3E%3Cpolygon id='XMLID_5_' class='st0' points='-46.7,417.2 -46,438.4 -31.6,438.4 -33.2,418.1 -35.7,418.1 -35,430.8 -41.1,430.8 -43.7,417.2 '/%3E%3Cpolygon id='XMLID_3_' class='st0' points='-30.4,418.1 -29.5,439.9 -25.5,439.9 -25.5,431.2 -23.3,430.8 -17.4,438.8 -12.7,438.8 -18.2,430.1 -16,430.8 -15,422 -13.7,420.4 -15.6,416.6 '/%3E%3C/g%3E%3Cpolygon id='XMLID_2_' class='st1' points='-25.1,427.8 -25.1,420.9 -20,420.9 -20.6,427.8 '/%3E%3C/svg%3E%0A",
+            logo: "data:image/svg+xml,%3Csvg version='1.1' id='logo-vertical-sualsur' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='-169 13.5 159.3 75.5' style='enable-background:new -169 13.5 159.3 75.5;' xml:space='preserve'%3E%3Cstyle type='text/css'%3E .st0%7Bfill:%23BD4136;%7D .st1%7Bfill:%231E1E1E;%7D .st2%7Bfill:%23A98A58;%7D%0A%3C/style%3E%3Cpolygon id='XMLID_22_' class='st0' points='-18.8,30.8 -17.6,49.8 -32.5,49.8 -33.5,31.5 '/%3E%3Cpolygon id='XMLID_9_' class='st1' points='-29.1,44.4 -29.1,35.3 -22.7,34.6 -21.8,44.4 '/%3E%3Cpolygon id='XMLID_21_' class='st0' points='-159.9,45.7 -158.6,52.5 -140.1,52.5 -140.9,36.5 -155.1,37.6 -154.9,29.8 -143.3,28.9 -143.2,31.4 -140.1,31.2 -139.5,24.1 -159.9,24.7 -160.7,41.6 -146.9,41 -146.4,48.5 -155.3,49 -156,45.9 '/%3E%3Cpolygon id='XMLID_20_' class='st0' points='-159.9,45.7 -158.6,52.5 -140.1,52.5 -140.9,36.5 -155.1,37.6 -154.9,29.8 -143.3,28.9 -143.2,31.4 -140.1,31.2 -139.5,24.1 -159.9,24.7 -160.7,41.6 -146.9,41 -146.4,48.5 -155.3,49 -156,45.9 '/%3E%3Cpolygon id='XMLID_19_' class='st0' points='-136.8,28.3 -137.6,49.8 -120.5,49.8 -121.1,30.4 -124.9,31.2 -124,44.2 -132.2,45.7 -133.9,27.7 '/%3E%3Cpolygon id='XMLID_18_' class='st0' points='-125.8,42.3 -127.2,32.2 -129.7,31.2 -129.7,42.8 '/%3E%3Cpolygon id='XMLID_17_' class='st0' points='-118.2,23.4 -117.6,51.5 -100.7,51.5 -100.7,45.1 -102.8,33.7 -112.7,35.7 -113.9,24.7 '/%3E%3Cpolygon id='XMLID_16_' class='st1' points='-106.1,46.9 -107.2,37.4 -112.3,38.3 -112.3,47.7 '/%3E%3Cpolygon id='XMLID_15_' class='st0' points='-98.1,33.8 -98.1,49.8 -91.7,49.8 -93.4,33.1 '/%3E%3Crect id='XMLID_14_' x='-98.1' y='24.1' class='st0' width='6.3' height='5.5'/%3E%3Cpolygon id='XMLID_13_' class='st0' points='-89.8,33.1 -87.8,50.4 -75.5,50.4 -75.5,47.7 -83.6,46.8 -83.9,43.8 -81.5,43.8 -77.6,43.1 -74.8,43.4 -74.2,36.1 -73,34.9 -74.8,32.1 '/%3E%3Cpolygon id='XMLID_11_' class='st0' points='-70.5,49.8 -71.5,30.3 -65.6,31 -59.6,40.1 -59.6,28.6 -56,28.6 -56,49.8 -59.2,49.8 -66.4,39.2 -65.4,49.8 '/%3E%3Cpolygon id='XMLID_10_' class='st0' points='-43.3,38.3 -46.7,37.6 -48.1,45.3 -41.3,46 -43.2,24.1 -38.2,22.6 -35.2,51.5 -51.7,51.5 -53.1,43 -52,35.3 -43.2,35.9 '/%3E%3Cpolygon id='XMLID_8_' class='st2' points='-136,66.6 -133.5,67.2 -133.5,65.7 -127.2,64.8 -127.2,77.2 -132.8,77.2 -133.3,73.5 -131,73.6 -130.6,74.6 -128.6,74.6 -128.6,70.5 -136.5,69.7 -136.5,81.2 -121.9,81.2 -122.7,60.9 -135.9,62.3 '/%3E%3Cpolygon id='XMLID_7_' class='st2' points='-120,54.7 -119.4,81.6 -110.1,81.6 -110.1,79 -114.5,78.5 -115,55.2 '/%3E%3Cpolygon id='XMLID_6_' class='st0' points='-101.7,74 -101.7,83.1 -83.4,83.1 -85.1,66.6 -97.1,67.7 -98,61.4 -88.2,61.4 -87.9,63 -85.3,62.9 -85.5,55.2 -102.3,56.5 -101.3,71.5 -89.4,71.5 -88.5,77.9 -96.7,79.6 -97.5,76.9 -92.8,75.9 -93.7,72.9 '/%3E%3Cpolygon id='XMLID_5_' class='st0' points='-81.7,60 -81,81.2 -66.6,81.2 -68.2,60.9 -70.7,60.9 -70,73.6 -76.1,73.6 -78.7,60 '/%3E%3Cpolygon id='XMLID_4_' class='st0' points='-71.1,71.7 -74.2,72.1 -75.4,60 -74.2,60 '/%3E%3Cpolygon id='XMLID_3_' class='st0' points='-65.4,60.9 -64.5,82.7 -60.5,82.7 -60.5,74 -58.3,73.6 -52.4,81.6 -47.7,81.6 -53.2,72.9 -51,73.6 -50,64.8 -48.7,63.2 -50.6,59.4 '/%3E%3Cpolygon id='XMLID_12_' class='st1' points='-79.3,41.3 -83.9,41.3 -84.5,35.3 -79.3,35.3 '/%3E%3Cpolygon id='XMLID_2_' class='st1' points='-60.1,70.6 -60.1,63.7 -55,63.7 -55.6,70.6 '/%3E%3C/svg%3E",
             website: "",
             repository: "https://github.com/artrugh",
             state: "ON PROCESS",

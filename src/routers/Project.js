@@ -80,7 +80,7 @@ const Project = props => {
     return (
         <div className="container">
             <Header id={id} />
-            <div className="container" id="project">
+            <div  id="project">
                 {project}
             </div>
         </div>

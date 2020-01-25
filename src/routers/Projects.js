@@ -4,7 +4,7 @@ import uuid from 'uuid';
 
 import { data } from './../data';
 
-const Projects = props => {
+const Projects = () => {
 
     const container = React.createRef();
     const [opacity, setOpacity] = useState(false);
@@ -16,14 +16,13 @@ const Projects = props => {
     }, [container]);
 
     const requireImage = source => require(`./../assets/${source}`)
-    // style = {{backgroundImage: `url(${picture})`}}
 
     const projects = data.projects.map(project => (
 
         <figure key={uuid.v4()} id={project.id}>
-            <Link to={`/projects/${project.id.toLowerCase()}`}
-                className={project.id.toLowerCase()}
-                onClick={props.button}>
+            <Link
+                to={`/projects/${project.id.toLowerCase()}`}
+                className={project.id.toLowerCase()}>
                 <img
                     className="project-main-image"
                     src={requireImage(project.img[0])}
@@ -33,8 +32,9 @@ const Projects = props => {
                 <h2>{project.id}</h2>
                 <p>{project.short_description}</p>
             </figcaption>
-            <Link className="button-project" to={`/projects/${project.id.toLowerCase()}`}
-                onClick={props.button}>
+            <Link
+                className="button-project"
+                to={`/projects/${project.id.toLowerCase()}`}>
                 SEE MORE</Link>
         </figure>
     ));

@@ -10,91 +10,112 @@
     box-shadow: 0 4px 2px -2px black;
 
     ul {
-        margin: 0;
         display: flex;
         justify-content: flex-end;
 
-        li {
-            font-size: 0.55em;
-            letter-spacing: 1.2px;
-            padding: 5px;
+        a {
+            margin-right: 3px;
+            padding: 10px 8px;
             background-color: $grey-list;
+            color: $dark-white;
+
+            //font style
+            font-size: 0.8em;
+            font-family: $arial;
+            font-weight: lighter;
+            letter-spacing: 1.2px;
+            word-spacing: -0.03em;
+            text-decoration: none;
             display: flex;
             align-items: center;
 
-            // &:hover {
-            //     background-color: $back-ground;
-            // }
-
-            &:not(last-child) {
-                border-right: 1px solid $grey-menu;
-                margin-right: 1px;
-            }
-
-            @media only screen and (min-width: $xs) and (max-width: $sm) {
-                font-size: 0.7em;
+            @media only screen and (min-width: $md) {
+                font-size: 1.2em;
+                padding: 10px 15px;
             }
 
             @media only screen and (min-width: $sm) and (max-width: $md) {
                 font-size: 1em;
+                padding: 10px 13px;
             }
 
-            // tablet  +765px
-            @media only screen and (min-width: $md) {
-                font-size: 1.2em;
+            @media only screen and (min-width: $xs) and (max-width: $sm) {
+            // here
+                font-size: 0.9em;
+                padding: 10px 10px;
+            }
+            &::before {
+                padding-right: 7px;
             }
 
-            a {
-                word-spacing: -0.03em;
-                color: $dark-white;
-                text-decoration: none;
-                font-family: $arial;
-                font-weight: lighter;
+        }
+
+        .active {
+            background-color: $back-ground;
+            color: #ffffff;
+            font-weight: 300;
+        }
+
+        .project {
+            display: flex;
+            // align-items: center;
+            justify-content: space-between;
+            padding: 10px 0px;
+
+            &:hover {
+                background-color: $back-ground;
+                color: #ffffff;
+                font-weight: 300;
             }
 
-            .project {
-                display: flex;
-                align-items: center;
-                justify-content: space-between;
+            i {
                 color: $white;
-
-                i {
-                    color: $white;
-                    margin: 0 9px;
-                    font-size: 0.9em;
-                }
-
-                .icon-remove {
-                    width: 15px;
-                    height: 15px;
-                    margin-left: 10px;
-                }
+                margin: 0 9px;
+                font-size: 0.9em;
             }
 
-            .home::before {
+            .icon-remove {
+                width: 20px;
+                height: 20px;
+                margin: 0 10px;
+
+            }
+        }
+
+        .home::before {
+
+            @media only screen and (min-width: 440px) {
                 content: '# ';
                 color: $blue-files;
             }
+        }
 
-            .about::before {
+        .about::before {
+
+            @media only screen and (min-width: 440px) {
                 content: '<> ';
                 color: $orange-index;
             }
 
-            .projects::before {
+        }
+
+        .projects::before {
+            @media only screen and (min-width: 440px) {
                 content: 'JS ';
                 color: $yellow-js;
                 font-size: 0.8em;
                 font-weight: 3em;
             }
 
-            .contact::before {
-                content: '& ';
-                color: $pink-sass;
-            }
+        }
 
-            a:last-child {
-                padding-right: 0.5rem;
+        .contact::before {
+
+            // content: '& ';
+            // color: $pink-sass;
+            @media only screen and (min-width: 440px) {
+                content: '{} ';
+                color: $yellow-js;
             }
         }
     }
