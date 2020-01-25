@@ -2,6 +2,10 @@
     padding: 1em;
     height: 100%;
 
+    @media only screen and (min-width: $sm) {
+        padding: 2.5em;
+    }
+
     #project-header {
 
         display: flex;
@@ -30,17 +34,19 @@
                 flex-direction: column;
                 align-items: center;
 
+                &>* {
+                    margin-bottom: 13px;
+                }
+
                 .project-name {
                     font-size: 1.5em;
                     color: $dark-white;
-                    padding-bottom: 0.3em;
                 }
 
                 a {
                     display: block;
                     font-size: 0.7em;
                     color: $blue;
-                    margin-bottom: 0.7em;
                     cursor: pointer;
 
                     &:hover {
