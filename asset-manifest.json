@@ -1,23 +1,24 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.85c9a78b.chunk.css",
-    "main.js": "/portfolio/static/js/main.5dbe8c84.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.5dbe8c84.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.c8d600c9.chunk.css",
+    "main.js": "/portfolio/static/js/main.9fbe9c5f.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.9fbe9c5f.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5cec9bc0.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cec9bc0.js.map",
     "static/css/2.67eb4ace.chunk.css": "/portfolio/static/css/2.67eb4ace.chunk.css",
-    "static/js/2.042c7659.chunk.js": "/portfolio/static/js/2.042c7659.chunk.js",
-    "static/js/2.042c7659.chunk.js.map": "/portfolio/static/js/2.042c7659.chunk.js.map",
+    "static/js/2.80352314.chunk.js": "/portfolio/static/js/2.80352314.chunk.js",
+    "static/js/2.80352314.chunk.js.map": "/portfolio/static/js/2.80352314.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.fdb64f59fc18c7161c147f6e2419d74b.js": "/portfolio/precache-manifest.fdb64f59fc18c7161c147f6e2419d74b.js",
+    "precache-manifest.f5e372fe299b8974e91eaea15856c91b.js": "/portfolio/precache-manifest.f5e372fe299b8974e91eaea15856c91b.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.67eb4ace.chunk.css.map": "/portfolio/static/css/2.67eb4ace.chunk.css.map",
-    "static/css/main.85c9a78b.chunk.css.map": "/portfolio/static/css/main.85c9a78b.chunk.css.map",
-    "static/js/2.042c7659.chunk.js.LICENSE": "/portfolio/static/js/2.042c7659.chunk.js.LICENSE",
+    "static/css/main.c8d600c9.chunk.css.map": "/portfolio/static/css/main.c8d600c9.chunk.css.map",
+    "static/js/2.80352314.chunk.js.LICENSE": "/portfolio/static/js/2.80352314.chunk.js.LICENSE",
     "static/media/banca0.png": "/portfolio/static/media/banca0.eb40abbe.png",
     "static/media/banca1.png": "/portfolio/static/media/banca1.806d5835.png",
     "static/media/banca2.png": "/portfolio/static/media/banca2.f75c2edb.png",
     "static/media/all.css": "/portfolio/static/media/fa-solid-900.f6121be5.woff2",
+    "static/media/logo.svg": "/portfolio/static/media/logo.55b7c04a.svg",
     "static/media/logo_black.svg": "/portfolio/static/media/logo_black.54b6d289.svg",
     "static/media/logo_mask_white.svg": "/portfolio/static/media/logo_mask_white.5820fad0.svg",
     "static/media/logo_white.svg": "/portfolio/static/media/logo_white.c38ea6f8.svg",
@@ -31,8 +32,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cec9bc0.js",
     "static/css/2.67eb4ace.chunk.css",
-    "static/js/2.042c7659.chunk.js",
-    "static/css/main.85c9a78b.chunk.css",
-    "static/js/main.5dbe8c84.chunk.js"
+    "static/js/2.80352314.chunk.js",
+    "static/css/main.c8d600c9.chunk.css",
+    "static/js/main.9fbe9c5f.chunk.js"
   ]
 }
