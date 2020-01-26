@@ -26,6 +26,11 @@
         }
 
         .bar {
+            font-size: 0.7em;
+            @media only screen and (min-width: $sm)  {
+                font-size: 0.9em;
+                
+            } 
             .second span:last-child {
                 padding-left: 1em ;  
             }
