@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.1450b100.chunk.css",
-    "main.js": "/portfolio/static/js/main.ae6725d4.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.ae6725d4.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.16632f68.chunk.css",
+    "main.js": "/portfolio/static/js/main.70be879b.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.70be879b.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5cec9bc0.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cec9bc0.js.map",
     "static/css/2.67eb4ace.chunk.css": "/portfolio/static/css/2.67eb4ace.chunk.css",
     "static/js/2.80352314.chunk.js": "/portfolio/static/js/2.80352314.chunk.js",
     "static/js/2.80352314.chunk.js.map": "/portfolio/static/js/2.80352314.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.ee359c7f5163dea2991472bd99a52d76.js": "/portfolio/precache-manifest.ee359c7f5163dea2991472bd99a52d76.js",
+    "precache-manifest.00ecf7f1cf9d61611e97b6307ac8b3ab.js": "/portfolio/precache-manifest.00ecf7f1cf9d61611e97b6307ac8b3ab.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.67eb4ace.chunk.css.map": "/portfolio/static/css/2.67eb4ace.chunk.css.map",
-    "static/css/main.1450b100.chunk.css.map": "/portfolio/static/css/main.1450b100.chunk.css.map",
+    "static/css/main.16632f68.chunk.css.map": "/portfolio/static/css/main.16632f68.chunk.css.map",
     "static/js/2.80352314.chunk.js.LICENSE": "/portfolio/static/js/2.80352314.chunk.js.LICENSE",
     "static/media/banca0.png": "/portfolio/static/media/banca0.eb40abbe.png",
     "static/media/banca1.png": "/portfolio/static/media/banca1.806d5835.png",
@@ -33,7 +33,7 @@
     "static/js/runtime-main.5cec9bc0.js",
     "static/css/2.67eb4ace.chunk.css",
     "static/js/2.80352314.chunk.js",
-    "static/css/main.1450b100.chunk.css",
-    "static/js/main.ae6725d4.chunk.js"
+    "static/css/main.16632f68.chunk.css",
+    "static/js/main.70be879b.chunk.js"
   ]
 }
