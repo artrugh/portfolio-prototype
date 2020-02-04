@@ -55,7 +55,7 @@ footer {
 
         span {
             text-align: end;
-            font-size: 1em;
+            font-size: 0.7em;
             margin: 0 4px;
             text-align: end;
             display: flex;
@@ -63,6 +63,13 @@ footer {
             height: 100%;
             padding-right: 6px;
             font-weight: lighter;
+
+            @media only screen and (min-width: 525px)  {   
+                font-size: 1em; 
+            } 
+            @media only screen and (min-width: 590px)  {   
+                font-size: 1.1em; 
+            } 
 
             &:hover {
                 background-color: lighten($color: $blue-footer, $amount: 20)
