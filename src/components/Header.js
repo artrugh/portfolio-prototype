@@ -1,5 +1,5 @@
 import React, { useState, createRef, useEffect } from 'react';
-import { NavLink, Link, withRouter } from 'react-router-dom';
+import { NavLink,  withRouter } from 'react-router-dom';
 import uuid from 'uuid';
 
 import { data } from '../data';

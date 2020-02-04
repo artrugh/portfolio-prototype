@@ -9,8 +9,15 @@
         legend {
             padding: 1.8em 0;
             font-family: $code-font;
-            font-size: 1.6em;
+            font-size: 1em;
             color: $blue;
+
+            @media only screen and (min-width: $xs)  {   
+                font-size: 1.3em; 
+            } 
+            @media only screen and (min-width: $sm)  {   
+                font-size: 1.6em; 
+            } 
 
             &::before {
                 content: '< ';
@@ -60,9 +67,13 @@
                     margin-left: 7px;
                     background-color: $back-ground;
                     border: none;
-                    font-size: 1em;
+                    font-size: 0.8em;
                     color: $orange;
                     // width: 80%;
+
+                    @media only screen and (min-width: $xs)  {   
+                        font-size: 1em; 
+                    }  
                 }
             }
 
