@@ -1,31 +1,63 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "207b0579e2a8db1166ea11ce8ed478b6",
+    "revision": "af18b38e07ca33bd6b5195b068271852",
     "url": "/portfolio/index.html"
   },
   {
-    "revision": "d23d65f6d6bf6c9de06d",
+    "revision": "2fce3b7fc3e077fe376b",
     "url": "/portfolio/static/css/2.67eb4ace.chunk.css"
   },
   {
-    "revision": "348490a41aa6a357171a",
-    "url": "/portfolio/static/css/main.16632f68.chunk.css"
+    "revision": "8a73cf20fa14a001dc83",
+    "url": "/portfolio/static/css/main.e76b7671.chunk.css"
   },
   {
-    "revision": "d23d65f6d6bf6c9de06d",
-    "url": "/portfolio/static/js/2.80352314.chunk.js"
+    "revision": "2fce3b7fc3e077fe376b",
+    "url": "/portfolio/static/js/2.f6a934db.chunk.js"
   },
   {
     "revision": "e928fe768baa9832b5bc57eae021f30c",
-    "url": "/portfolio/static/js/2.80352314.chunk.js.LICENSE"
+    "url": "/portfolio/static/js/2.f6a934db.chunk.js.LICENSE"
   },
   {
-    "revision": "348490a41aa6a357171a",
-    "url": "/portfolio/static/js/main.70be879b.chunk.js"
+    "revision": "8a73cf20fa14a001dc83",
+    "url": "/portfolio/static/js/main.a8d38486.chunk.js"
   },
   {
     "revision": "255a19e524ffeb5febac",
     "url": "/portfolio/static/js/runtime-main.5cec9bc0.js"
+  },
+  {
+    "revision": "1a1c60e4dc146ef880e158745e67a17d",
+    "url": "/portfolio/static/media/JetBrainsMono-Bold-Italic.1a1c60e4.woff2"
+  },
+  {
+    "revision": "4ec2869f3bc6d286028923945a51d33c",
+    "url": "/portfolio/static/media/JetBrainsMono-Bold.4ec2869f.woff2"
+  },
+  {
+    "revision": "cb49731058acd4fc59927fc3504934c2",
+    "url": "/portfolio/static/media/JetBrainsMono-ExtraBold-Italic.cb497310.woff2"
+  },
+  {
+    "revision": "b478c49d3268c0f72f57439078e57016",
+    "url": "/portfolio/static/media/JetBrainsMono-ExtraBold.b478c49d.woff2"
+  },
+  {
+    "revision": "d9f6a606d99b55e8be4d9a267d5d63d3",
+    "url": "/portfolio/static/media/JetBrainsMono-Italic.d9f6a606.woff2"
+  },
+  {
+    "revision": "ec89f4b3792a41165bced6f317c721fd",
+    "url": "/portfolio/static/media/JetBrainsMono-Medium-Italic.ec89f4b3.woff2"
+  },
+  {
+    "revision": "35a9c20db1dd034073be89b124cf655e",
+    "url": "/portfolio/static/media/JetBrainsMono-Medium.35a9c20d.woff2"
+  },
+  {
+    "revision": "68ba9577c1091233e3f1bff8d276fc26",
+    "url": "/portfolio/static/media/JetBrainsMono-Regular.68ba9577.woff2"
   },
   {
     "revision": "eb40abbe9ee2a9037338e3680293d985",
