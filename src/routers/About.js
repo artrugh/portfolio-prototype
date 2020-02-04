@@ -16,7 +16,7 @@ const About = () => {
 
     const Bar = (porcent) => {
 
-        let a = width / 7
+        let a = width / 15
         let b = a * `0.${porcent}`
         let array = []
 

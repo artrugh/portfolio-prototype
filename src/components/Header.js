@@ -36,7 +36,7 @@ const Header = props => {
                 onMouseOver={mouseOver}
                 className={li}>
                 <i className="fas fa-align-left"></i>
-                {li === "project" ? props.id.toLowerCase() : li}
+                {li === "project" ? props.id.toUpperCase() : li}
                 <div className="icon-remove"
                     style={{
                         backgroundImage: mouse ? image : ""
@@ -51,7 +51,7 @@ const Header = props => {
                     backgroundColor: itemBackgroundColor ? "#2d2d2d" : null
                 }}
                 >
-                {li}
+                {li.toUpperCase()}
             </NavLink>
     ));
     return (

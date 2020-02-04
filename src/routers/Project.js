@@ -29,7 +29,7 @@ const Project = props => {
     const decreace = index => index > 0 ? setIndex(prevIndex => prevIndex - 1) : null;
 
     const project = data.projects.map(project => (
-        project.id.toLowerCase() === id ?
+        project.id.toLowerCase() === id && (
             <Fragment key={uuid.v4()}>
                 <div id="project-header">
                     {/* if there is logo, render logo */}
@@ -72,15 +72,14 @@ const Project = props => {
                     <Slider
                         index={index}
                         slider={slider}
-                        project={project}
-                    />
+                        project={project} />
                 </div>
-            </Fragment > : null
+            </Fragment >)
     ));
     return (
         <div className="container">
             <Header id={id} />
-            <div  id="project">
+            <div id="project">
                 {project}
             </div>
         </div>
