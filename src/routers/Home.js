@@ -15,7 +15,7 @@ const Home = () => {
     const { height } = useWindowDimensions();
 
     return (
-        <div className="container">
+        <div className="container" id = "home">
              <LateralBar screen={height} />
             <div className="section title">
                 <section>

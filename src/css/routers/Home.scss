@@ -1,104 +1,110 @@
 // Home Styles
+#home {
+    .section {
+        margin: 0 1em 2em 4em;
+    }
 
-.section {
-    margin-left: 5em;
-    margin-bottom: 2em;
-}
+    .title {
 
-.title {
+        section {
+            padding: 1em 0;
 
-    section {
-        padding-top: 1em;
+            p {
+                display: inline;
+                line-height: 1.3em;
+                color: $dark-white;
+                font-family: $code-font;
+                font-size: 1.2em; 
+                @media only screen and (min-width: $xs)  {   
+                    font-size: 1.3em; 
+                } 
+                @media only screen and (min-width: $sm)  {   
+                    font-size: 1.6em; 
+                } 
+            }
 
-        p {
-            display: inline;
-            font-size: 1.5rem;
-            line-height: 1.3em;
-            color: $dark-white;
+            p:nth-child(1) {
+                color: $yellow;
+            }
+
+            p:nth-child(2) {
+                color: $dark-white;
+            }
+
+            p:nth-child(4) {
+                color: $pink;
+            }
+
+            p:nth-child(5) {
+                color: $yellow-light;
+            }
+
+            p:nth-child(7) {
+                color: $light-blue;
+            }
+        }
+    }
+
+    .statement {
+
+        // @include margin-top (2em, 2);
+
+        .typed {
+            margin: 10px 0;
+            min-width: 150px;
             font-family: $code-font;
+            color: $dark-white;
+            letter-spacing: 2px;
+            padding-left: 2em;
+            display: inherit;
+            font-size: 1em; 
+            @media only screen and (min-width: $xs)  {   
+                font-size: 1.1em; 
+            } 
+            @media only screen and (min-width: $sm)  {   
+                font-size: 1.3em; 
+            } 
+        }
 
-            @media only screen and (min-width: $sm) {
-                font-size: 2.7em;
+        .main {
+            margin-bottom: 20px;
+            font-family: $code-font;
+            font-size: 1em; 
+            @media only screen and (min-width: $xs)  {   
+                font-size: 1.1em; 
+            } 
+            @media only screen and (min-width: $sm)  {   
+                font-size: 1.3em; 
+            } 
+        }
+
+        .main:first-child {
+            color: $blue;
+
+            &::before {
+                content: '<';
+                color: $grey-fonts;
+            }
+
+            &::after {
+                content: '>';
+                color: $grey-fonts;
             }
         }
 
-        p:nth-child(1) {
-            color: $yellow;
-        }
+        .main:last-child {
 
-        p:nth-child(2) {
-            color: $dark-white;
-        }
+            color: $blue;
 
-        p:nth-child(4) {
-            color: $pink;
-        }
+            &::before {
+                content: '<';
+                color: $grey-fonts;
+            }
 
-        p:nth-child(5) {
-            color: $yellow-light;
-        }
-
-        p:nth-child(7) {
-            color: $light-blue;
-        }
-    }
-}
-
-.statement {
-
-    // @include margin-top (2em, 2);
-
-    .typed {
-        font-family: $code-font;
-        font-size: 1.3em;
-        color: $dark-white;
-        letter-spacing: 2px;
-        padding-left: 2em;
-        display: inherit;
-
-        // desktop
-        @media only screen and (min-width: $xs) {
-            font-size: 1.5em;
-        }
-    }
-
-    .main {
-        font-size: 1.3em;
-        margin-bottom: 2em;
-        font-family: $code-font;
-
-        // +400
-        @media only screen and (min-width: $xs) {
-            font-size: 1.5em;
-        }
-    }
-
-    .main:first-child {
-        color: $blue;
-
-        &::before {
-            content: '<';
-            color: $grey-fonts;
-        }
-
-        &::after {
-            content: '>';
-            color: $grey-fonts;
-        }
-    }
-
-    .main:last-child {
-
-        color: $blue;
-
-        &::before {
-            content: '<';
-            color: $grey-fonts;
-        }
-
-        &::after {
-            content: '/>';
-            color: $grey-fonts;
+            &::after {
+                content: '/>';
+                color: $grey-fonts;
+            }
         }
     }
 }
