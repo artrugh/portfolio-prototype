@@ -39,69 +39,73 @@
         padding: 2em;
     }
 
-    figure {
-        text-align: justify;
-        background-color: $grey-cards;
-        padding: 1em;
-        margin-bottom: 5%;
-        position: relative;
+    .button {
+        display: contents;
+        text-decoration: none;
 
-        a {
+        figure {
+            text-align: justify;
+            background-color: $grey-cards;
+            padding: 1em;
+            margin-bottom: 5%;
+
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: flex-end;
+
             .project-main-image {
                 width: 100%;
-                cursor: pointer;
             }
-        }
 
-        figcaption {
+            figcaption {
+                width: 100%;
+                margin-bottom: 70px;
 
-            margin-bottom: 70px;
+                h2 {
+                    color: $blue;
+                    padding: 0.5em 0;
+                    font-size: 1.2em;
 
-            h2 {
-                color: $blue;
-                padding: 0.5em 0;
-                font-size: 1.2em; 
-                @media only screen and (min-width: $xs)  {   
-                    font-size: 1.3em; 
-                } 
-                @media only screen and (min-width: $sm)  {   
-                    font-size: 1.6em; 
-                } 
+                    @media only screen and (min-width: $xs) {
+                        font-size: 1.3em;
+                    }
 
-                &::before {
-                    content: '<';
-                    color: $grey-fonts;
+                    @media only screen and (min-width: $sm) {
+                        font-size: 1.6em;
+                    }
+
+                    &::before {
+                        content: '<';
+                        color: $grey-fonts;
+                    }
+
+                    &::after {
+                        content: '>';
+                        color: $grey-fonts;
+                    }
                 }
 
-                &::after {
-                    content: '>';
-                    color: $grey-fonts;
+                p {
+                    line-height: 1.19em;
+                    color: $dark-white;
+                    word-spacing: 0.1px;
+                    letter-spacing: 1.2px;
+                    line-height: 22px;
                 }
             }
 
-            p {
-                line-height: 1.19em;
-                color: $dark-white;
-                word-spacing: 0.1px;
-                letter-spacing: 1.2px;
-                line-height: 22px;
-            }
-        }
+            .button-project {
 
-        .button-project {
-            background: $grey-form;
-            float: right;
-            margin: 1em 0;
-            padding: 0.7em;
-            border-radius: 2px;
-            color: $yellow-js;
-            position: absolute;
-            bottom: 0;
-            right: 0;
-            margin-right: 1em;
+                width: fit-content;
+                background: $grey-form;
+                padding: 0.7em;
+                border-radius: 2px;
+                color: $yellow-js;
 
-            &:hover {
-                color: $pink-sass;
+                &:hover {
+                    color: $pink-sass;
+                }
             }
         }
     }

@@ -7,6 +7,7 @@ import { data } from '../data';
 const Header = props => {
 
     const [mouse, setMouse] = useState(false);
+    
     const mouseOver = () => {
         setMouse(true)
     }

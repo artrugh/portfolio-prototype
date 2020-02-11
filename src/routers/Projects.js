@@ -18,25 +18,23 @@ const Projects = () => {
     const requireImage = source => require(`./../assets/${source}`)
 
     const projects = data.projects.map(project => (
+        <Link
+            to={`/projects/${project.id.toLowerCase()}`}
+            className={`${project.id.toLowerCase()} button`}>
 
-        <figure key={uuid.v4()} id={project.id}>
-            <Link
-                to={`/projects/${project.id.toLowerCase()}`}
-                className={project.id.toLowerCase()}>
+            <figure key={uuid.v4()} id={project.id}>
                 <img
                     className="project-main-image"
                     src={requireImage(project.img[0])}
                     alt="project" />
-            </Link>
-            <figcaption>
-                <h2>{project.id}</h2>
-                <p>{project.short_description}</p>
-            </figcaption>
-            <Link
-                className="button-project"
-                to={`/projects/${project.id.toLowerCase()}`}>
-                SEE MORE</Link>
-        </figure>
+
+                <figcaption>
+                    <h2>{project.id}</h2>
+                    <p>{project.short_description}</p>
+                </figcaption>
+                    <div className="button-project">SEE MORE</div>
+            </figure>
+        </Link>
     ));
     return (
         <div

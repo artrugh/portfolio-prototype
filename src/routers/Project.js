@@ -11,7 +11,7 @@ const Project = props => {
 
     useEffect(() => {
         document.title = `${id}`;
-    });
+    }, []);
 
     const id = props.match.params.id
     const [index, setIndex] = useState(0);
