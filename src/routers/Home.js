@@ -33,7 +33,7 @@ const Home = () => {
                 <span className="main">main</span>
                 <section>
                     <Type 
-                    string = "transforming your ideas into images and the images to code"
+                    string = "transforming your ideas into images and the images to code!"
                     min = {50}
                     max = {100}
                     deleteSign = {false}

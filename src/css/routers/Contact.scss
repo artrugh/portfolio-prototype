@@ -71,6 +71,10 @@
                     color: $orange;
                     // width: 80%;
 
+                    &:focus {
+                        outline: none;
+                    }
+
                     @media only screen and (min-width: $xs)  {   
                         font-size: 1em; 
                     }  
