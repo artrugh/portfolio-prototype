@@ -4,11 +4,11 @@
     flex-direction: column;
     position: absolute;
     margin: 15px 0px;
+    z-index: -1;
+
     @media only screen and (min-width: $sm) {
         margin: 5px 0px;
     }
-
-
 
     div {
         display: flex;
@@ -25,7 +25,7 @@
         }
 
         p {
-            font-size: 1em;   
+            font-size: 1em;
             font-family: $code-font;
             color: $grey-fonts;
             width: 20px;

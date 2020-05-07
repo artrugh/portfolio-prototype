@@ -1,10 +1,9 @@
 // Contact Styles
 #contact {
 
-    margin-right: 2em;
-
     form {
         padding-left: 5em;
+        padding-right: 2em;
 
         legend {
             padding: 1.8em 0;
@@ -19,15 +18,15 @@
                 font-size: 1.6em; 
             } 
 
-            &::before {
-                content: '< ';
-                color: $grey-fonts;
-            }
+            // &::before {
+            //     content: '< ';
+            //     color: $grey-fonts;
+            // }
 
-            &::after {
-                content: ' />';
-                color: $grey-fonts;
-            }
+            // &::after {
+            //     content: ' />';
+            //     color: $grey-fonts;
+            // }
         }
 
         fieldset {
@@ -88,7 +87,7 @@
 
         button {
             background-color: $grey-form;
-            border-radius: 5px;
+            border-radius: 2px;
             border: none;
             margin-right: 2.2em;
             margin-top: 2.2em;

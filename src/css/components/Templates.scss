@@ -1,0 +1,187 @@
+// .device:hover {
+//     cursor: url('https://img.icons8.com/ios/25/ffffff/delete-sign.png'), auto;
+// }
+
+@mixin styling($height) {
+
+    /* computer */
+    .computer-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+
+        .computer {
+            background-color: aliceblue;
+
+            height: $height;
+            width: calc(#{$height} * 1.85);
+
+            border: 1px solid black;
+            border-radius: calc(#{$height} / 15);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+
+            .screen {
+                background-color: burlywood;
+
+                border-radius: calc(#{$height} / 100);
+
+                height: calc(#{$height} - #{$height} / 8);
+                width: calc(#{$height} * 1.65);
+
+                background-repeat: no-repeat;
+
+                background-size: cover;
+            }
+
+            .buttom-top {
+                width: calc(#{$height} / 42);
+                height: calc(#{$height} / 42);
+                border-radius: 100%;
+                position: absolute;
+                top: 5px;
+                background-color: black;
+            }
+
+        }
+
+        .stand-computer {
+            margin-top: calc(#{$height} / 20);
+            background-color: aliceblue;
+            width: calc(#{$height} / 2);
+            height: calc(#{$height} / 6);
+            border-left: 1px solid black;
+            border-right: 1px solid black;
+            border-top: 1px solid black;
+        }
+
+        .footer-computer {
+            background-color: aliceblue;
+            width: calc(#{$height} * 1.5);
+            height: calc(#{$height} / 15);
+            border: 1px solid black;
+            border-top-left-radius: calc(#{$height} / 15);
+            border-top-right-radius: calc(#{$height} / 15);
+        }
+    }
+
+    /* movil */
+    .movil {
+        background-color: aliceblue;
+        width: $height;
+        height: calc(#{$height} * 1.75);
+
+        border-radius: 30px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+
+        &:before {
+            content: '';
+
+            position: absolute;
+            background-color: aliceblue;
+            border: 0.5px solid $back-ground;
+
+            height: calc(#{$height} / 10);
+            width: calc(#{$height} / 100);
+            left: calc(#{$height} / -80);
+            top: calc(#{$height} / 4);
+        }
+
+        &:after {
+            content: '';
+
+            position: absolute;
+            background-color: aliceblue;
+            border: 0.5px solid $back-ground;
+
+            height: calc(#{$height} / 10);
+            width: calc(#{$height} / 100);
+            left: calc(#{$height} / -80);
+            top: calc(#{$height} / 2.7);
+        }
+
+        .screen {
+
+            width: calc(#{$height} / 1.1);
+            height: calc(#{$height} * 1.37);
+
+            border-radius: 2px;
+            position: absolute;
+            top: calc(#{$height} / 6);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+
+        .buttom-top {
+            width: calc(#{$height} / 40);
+            height: calc(#{$height} / 40);
+            border-radius: 100%;
+            position: absolute;
+            top: calc(#{$height} / 10 / 3);
+            background-color: black;
+        }
+
+        .logo {
+            width: calc(#{$height} / 6);
+            height: calc(#{$height} / 30);
+            border-radius: calc(#{$height} / 30);
+            border: 1px solid black;
+            position: absolute;
+            top: calc(#{$height} / 11);
+        }
+
+        .buttom-bottom {
+            width: calc(#{$height} / 10);
+            height: calc(#{$height} / 10);
+            border-radius: 100%;
+            border: 1px solid black;
+            position: absolute;
+            bottom: calc(#{$height} / 15);
+        }
+    }
+}
+
+@media (min-width: 900px) {
+    @include styling((280px));
+}
+
+@media (max-width: 900px) {
+    @include styling((260px));
+}
+
+@media (max-width: 860px) {
+    @include styling((250px));
+}
+
+@media (max-width: 800px) {
+    @include styling((240px));
+}
+
+@media (max-width: 760px) {
+    @include styling((300px));
+}
+
+@media (max-width: 650px) {
+    @include styling((250px));
+}
+
+@media (max-width: 550px) {
+    @include styling((190px));
+}
+
+@media (max-width: 450px) {
+    @include styling((170px));
+}
+
+@media (max-width: 400px) {
+    @include styling((150px));
+}
+
+@media (max-width: 350px) {
+    @include styling((120px));
+}

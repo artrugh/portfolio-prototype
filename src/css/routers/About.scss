@@ -12,15 +12,15 @@
             color: $blue;
             font-size: 1.2em;
 
-            &::before {
-                content: '<';
-                color: $grey-fonts;
-            }
+            // &::before {
+            //     content: '<';
+            //     color: $grey-fonts;
+            // }
 
-            &::after {
-                content: '>';
-                color: $grey-fonts;
-            }
+            // &::after {
+            //     content: '>';
+            //     color: $grey-fonts;
+            // }
         }
 
         .bar {
@@ -40,8 +40,6 @@
             .white {
                 color: $grey-form;
             }
-
-            
 
             &:hover{
 
@@ -70,8 +68,7 @@
     
                 .React {
                     color: $blue-files
-                }
-                
+                }     
             }
         }
     }

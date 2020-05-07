@@ -6,19 +6,21 @@ import Logo from './Logo';
 
 import { data } from './../data';
 
-const SocialNets = () => {
+const SocialNets = ({ setSection }) => {
     const links = data.social_nets.map(item => (
         item.id === "logo" ?
-            <Link to={item.path}
+            <Link
+                onClick={() => setSection(undefined)}
+                to={item.path}
                 key={uuid.v4()}>
-               <Logo/>   
+                <Logo />
             </Link>
             : <a href={item.path}
                 key={uuid.v4()}
                 className={item.id}
                 rel="noopener noreferrer"
-                target="_blank">   
-                <i className={item.icon} />    
+                target="_blank">
+                <i className={item.icon} />
             </a>
     ));
     return (

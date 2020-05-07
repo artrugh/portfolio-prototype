@@ -1,42 +1,49 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useLayoutEffect, useState } from 'react';
 
-const Slider = props => {
+import Computer from './Computer';
+import Movile from './Movile';
+
+const Slider = ({ project, index, increace, decreace }) => {
+
+    // get the dimension of the loaded img, to set which displayer it should be displayed in
+    const [dimensions, setDimensions] = useState(undefined);
+    const [template, setTemplate] = useState(undefined);
+
+    useLayoutEffect(() => {
+        if (dimensions) {
+            dimensions.width > dimensions.height ? setTemplate("computer") : setTemplate("movile")
+        }
+    }, [dimensions, template]);
 
     return (
         <div className="img-container">
-            <svg
-                onClick={e => props.slider(e, props.project.img.length)}
-                className="arrow-slider left"
-                x="0px" y="0px" viewBox="0 0 100 100"
-                style={{
-                    width: props.index > 0 ? "50px" : null,
-                    maxWidth: props.index > 0 ? "30px" : "0px",
-                    paddingLeft: props.index > 0 ? "15px" : "0px"
-                }}>
-                <polyline className="st0" points="50.5,6.3 7,49.5 50.5,93 " />
-            </svg>
-            <Link to="/projects">
+            {!template ?
                 <img
-                    src={require(`./../assets/${props.project.img[props.index]}`)}
-                    className="img-slider"
-                    alt="project"
-                    onMouseOver={e => e.target.style.cursor = "url('https://img.icons8.com/ios/25/ffffff/delete-sign.png'), auto"}
+                    onLoad={e => {
+                        // when the image is already loaded set the dimensions
+                        setDimensions({
+                            width: e.target.offsetWidth,
+                            height: e.target.offsetHeight,
+                        });
+                    }}
+                    alt={project.id}
+                    style={{ visibility: "hidden" }}
+                    src={require(`./../assets/${project.img[index]}`)}
                 />
-            </Link>
-            <svg
-                onClick={e => props.slider(e, props.project.img.length)}
-                // ref={arrowRight}
-                className="arrow-slider right"
-                x="0px" y="0px" viewBox="0 0 100 100"
-                style={{
-                    width: props.index < props.project.img.length - 1 ? "50px" : null,
-                    maxWidth: props.index < props.project.img.length - 1 ? "30px" : "0px",
-                    paddingLeft: props.index < props.project.img.length - 1 ? "15px" : "0px"
-                }}>
-                <polyline className="st0" points="50.5,6.3 7,49.5 50.5,93 " />
-            </svg>
-        </div>
+                // decide which template should be displayed
+                : template === "computer" ?
+                    <Computer image={project.img[index]} />
+                    : <Movile image={project.img[index]} />
+            }
+            <div
+                className="left-cursor"
+                onClick={() => increace(index, project.img.length)}
+            ></div>
+            <div
+                className="right-cursor"
+                onClick={() => decreace(index)}
+            ></div>
+        </div >
     )
 }
 

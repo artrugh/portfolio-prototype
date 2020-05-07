@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { HashRouter, Route, Switch } from 'react-router-dom';
 
 //Routers
@@ -14,21 +14,45 @@ import Header from './components/Header';
 import SocialNets from './components/SocialNets';
 import Footer from './components/Footer';
 
-const App = () => {  
+const App = () => {
+    const [section, setSection] = useState(undefined)
+
+    const data = {
+        section: section,
+        setSection: setSection
+    }
     return (
-            <HashRouter>
-                <SocialNets />
-                <Header />
-                <Switch>
-                    <Route exact path="/" component={Home} />
-                    <Route path="/about" component={About} />
-                    <Route exact path="/projects" component={Projects} />
-                    <Route exact path="/projects/:id" component={Project} />
-                    <Route path="/contact" component={Contact} />
-                    <Route component={NotFound} />
-                </Switch>
-                <Footer />
-            </HashRouter>
+        <HashRouter>
+
+            <div id="main-container">
+
+                <SocialNets
+                    setSection={setSection}
+                />
+
+                <div id="routers-container">
+
+                    <Header
+                        section={section}
+                        setSection={setSection} />
+
+                    <Switch>
+                        <Route exact path="/"
+                            component={Home} />
+                        <Route path="/about" component={About} />
+                        <Route exact path="/projects"
+                            render={(props) => <Projects {...props} data={setSection} />}
+                        />
+                        <Route exact path="/projects/:id" component={Project} />
+                        <Route path="/contact" component={Contact} />
+                        <Route component={NotFound} />
+                    </Switch>
+
+                </div>
+
+            </div>
+            <Footer />
+        </HashRouter>
     );
 }
 

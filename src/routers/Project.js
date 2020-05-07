@@ -4,39 +4,32 @@ import uuid from 'uuid';
 import { data } from './../data';
 
 //COMPONENTS
-import Header from '../components/Header';
 import Slider from '../components/Slider';
 
 const Project = props => {
 
+    // get the id from the match params
+    const id = props.match.params.id
     useEffect(() => {
         document.title = `${id}`;
-    }, []);
+    }, [id]);
 
-    const id = props.match.params.id
+    // set the function in this Component to re render each time the slider changes
+    // otherwise it is not posible to mesure the img lenght and heigth before it is rendered
     const [index, setIndex] = useState(0);
-
-    // slider handle
-    const slider = (e, max) => {
-        if (e.target.className.baseVal === "arrow-slider right" || e.target.className.baseVal === "st0") {
-            increace(index, max);
-        } else if (e.target.className.baseVal === "arrow-slider left" || e.target.className.baseVal === "st0") {
-            decreace(index);
-        }
-    }
-
     const increace = (index, limit) => index < limit - 1 ? setIndex(prevIndex => prevIndex + 1) : null;
     const decreace = index => index > 0 ? setIndex(prevIndex => prevIndex - 1) : null;
 
     const project = data.projects.map(project => (
         project.id.toLowerCase() === id && (
-            <Fragment key={uuid.v4()}>
+            <Fragment
+                key={uuid.v4()}>
                 <div id="project-header">
                     {/* if there is logo, render logo */}
                     {project.logo.length > 1 ? <img className="project-logo" src={project.logo} alt={project.id} /> : null}
                     <div className="project-info">
                         <div className="titles">
-                            <h1 className="project-name">{project.id}</h1>
+                            {/* <h1 className="project-name">{project.id}</h1> */}
                             <a href={project.website}
                                 key={uuid.v4()}
                                 className="project-link"
@@ -70,18 +63,18 @@ const Project = props => {
                 < div id="project-body">
                     <p>{project.long_description}</p>
                     <Slider
+                        // pass the slider's function as props
+                        // as well as the data
                         index={index}
-                        slider={slider}
+                        increace={increace}
+                        decreace={decreace}
                         project={project} />
                 </div>
             </Fragment >)
     ));
     return (
-        <div className="container">
-            <Header id={id} />
-            <div id="project">
-                {project}
-            </div>
+        <div className="container" id="project">
+            {project}
         </div>
     )
 }

@@ -6,6 +6,7 @@
 @import './components/Header';
 @import './components/Footer';
 @import './components/LateralBar.scss';
+@import './components/Templates.scss';
 
 //ROUTERS
 @import './routers/Home';
@@ -26,21 +27,58 @@
   font-family: $code-font;
   font-weight: lighter;
   font-style: normal;
-  font-weight: 100;
+
   color: $white;
+
 }
 
 body {
   background-color: $back-ground;
-  max-width: 1400px;
+  display: flex;
+  justify-content: center;
+
+}
+
+#root {
+  max-width: 1500px;
+  min-width: 300px;
+  width: 1300px;
+
+}
+
+#routers-container {
+
+  width: calc(100% - 53px);
+  position: relative;
+  right: -53px;
 }
 
 .container {
-  min-width: 230px;
-  max-width: 1300px;
-  margin-left: 3.4em;
-  margin-top: 2.7em;
+  // border-image: linear-gradient(to right, $grey-form 10%, $blue-bar 50%, $grey-form 60%);
+  border-right: 15px solid $grey-form;
+  height: fit-content;
+
+  &:before {
+    background: linear-gradient(to right, $blue-bar 4px, $grey-form 0px);
+    margin-top: 380px;
+    position: absolute;
+    content: '';
+    height: 30px;
+    width: 15px;
+    right: 0;
+  }
+
+  &:after {
+    background: linear-gradient(to right, $green-bar 4px, $grey-form 0px);
+    margin-top: -50px;
+    position: absolute;
+    content: '';
+    height: 60px;
+    width: 15px;
+    right: 0;
+  }
 }
+
 
 // Scroll bar
 ::-webkit-scrollbar {

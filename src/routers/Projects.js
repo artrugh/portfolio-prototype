@@ -1,12 +1,14 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, createRef } from 'react';
 import { Link } from 'react-router-dom';
 import uuid from 'uuid';
 
 import { data } from './../data';
 
-const Projects = () => {
+const Projects = props => {
 
-    const container = React.createRef();
+    const setSection = props.data
+
+    const container = createRef();
     const [opacity, setOpacity] = useState(false);
 
     // after the container is mounted check the opacity of the arrow
@@ -15,26 +17,40 @@ const Projects = () => {
         if (container.current.clientHeight < window.innerHeight) setOpacity(true);
     }, [container]);
 
-    const requireImage = source => require(`./../assets/${source}`)
+    // const requireImage = source => require(`./../assets/${source}`)
 
     const projects = data.projects.map(project => (
         <Link
+            onClick={() => setSection(project.id)}
+            key={uuid.v4()}
             to={`/projects/${project.id.toLowerCase()}`}
             className={`${project.id.toLowerCase()} button`}>
 
-            <figure key={uuid.v4()} id={project.id}>
-                <img
+            <figure
+                key={uuid.v4()}
+                id={project.id}>
+                {/* <img
+                    key={uuid.v4()}
                     className="project-main-image"
                     src={requireImage(project.img[0])}
-                    alt="project" />
+                    alt="project" /> */}
+
+                <div
+                    key={uuid.v4()}
+                    className="project-main-image"
+                    style={{ backgroundImage: `url(${require(`./../assets/${project.img[0]}`)})` }} >
+
+                </div>
 
                 <figcaption>
-                    <h2>{project.id}</h2>
-                    <p>{project.short_description}</p>
+                    <p key={uuid.v4()}><span>name: </span>"{project.id}"</p>,<br />
+                    <p key={uuid.v4()}><span>description: </span>"{project.short_description}"</p>
                 </figcaption>
-                    <div className="button-project">SEE MORE</div>
+                <div
+                    key={uuid.v4()}
+                    className="button-project">SEE MORE</div>
             </figure>
-        </Link>
+        </Link >
     ));
     return (
         <div

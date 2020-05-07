@@ -22,20 +22,15 @@
 
 #projects {
 
-    padding: 1em;
-
     @media only screen and (min-width: $md) and (max-width: $lg) {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        gap: 2em;
-        padding: 1em;
     }
 
     // desktop -1023px
     @media only screen and (min-width: $lg) {
         display: grid;
         grid-template-columns: 1fr 1fr 1fr;
-        gap: 1.5em;
         padding: 2em;
     }
 
@@ -44,10 +39,12 @@
         text-decoration: none;
 
         figure {
+            height: fit-content;
+
             text-align: justify;
             background-color: $grey-cards;
             padding: 1em;
-            margin-bottom: 5%;
+            margin: 5%;
 
             display: flex;
             flex-direction: column;
@@ -56,42 +53,39 @@
 
             .project-main-image {
                 width: 100%;
+                height: 15em;
+
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
             }
 
             figcaption {
                 width: 100%;
+                margin-top: 20px;
                 margin-bottom: 70px;
 
-                h2 {
-                    color: $blue;
-                    padding: 0.5em 0;
-                    font-size: 1.2em;
-
-                    @media only screen and (min-width: $xs) {
-                        font-size: 1.3em;
-                    }
-
-                    @media only screen and (min-width: $sm) {
-                        font-size: 1.6em;
-                    }
+                p {
+                    display: inline;
+                    color: $yellow;
+                    text-align: left;
+                    word-spacing: 0.1px;
+                    letter-spacing: 1.2px;
+                    line-height: 32px;
 
                     &::before {
-                        content: '<';
-                        color: $grey-fonts;
+                        content: '{';
+                        color: $dark-white;
                     }
 
                     &::after {
-                        content: '>';
-                        color: $grey-fonts;
+                        content: '}';
+                        color: $dark-white;
                     }
-                }
 
-                p {
-                    line-height: 1.19em;
-                    color: $dark-white;
-                    word-spacing: 0.1px;
-                    letter-spacing: 1.2px;
-                    line-height: 22px;
+                    span {
+                        color: $light-blue;
+                    }
                 }
             }
 
@@ -101,10 +95,10 @@
                 background: $grey-form;
                 padding: 0.7em;
                 border-radius: 2px;
-                color: $yellow-js;
+                color: $green-files;
 
                 &:hover {
-                    color: $pink-sass;
+                    color: $pink;
                 }
             }
         }
