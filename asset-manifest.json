@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.css": "/portfolio/static/css/main.9457af17.chunk.css",
-    "main.js": "/portfolio/static/js/main.7a982724.chunk.js",
-    "main.js.map": "/portfolio/static/js/main.7a982724.chunk.js.map",
+    "main.css": "/portfolio/static/css/main.ddc48037.chunk.css",
+    "main.js": "/portfolio/static/js/main.65fd2d08.chunk.js",
+    "main.js.map": "/portfolio/static/js/main.65fd2d08.chunk.js.map",
     "runtime-main.js": "/portfolio/static/js/runtime-main.5cec9bc0.js",
     "runtime-main.js.map": "/portfolio/static/js/runtime-main.5cec9bc0.js.map",
     "static/css/2.67eb4ace.chunk.css": "/portfolio/static/css/2.67eb4ace.chunk.css",
-    "static/js/2.f6a934db.chunk.js": "/portfolio/static/js/2.f6a934db.chunk.js",
-    "static/js/2.f6a934db.chunk.js.map": "/portfolio/static/js/2.f6a934db.chunk.js.map",
+    "static/js/2.1cd2fe4f.chunk.js": "/portfolio/static/js/2.1cd2fe4f.chunk.js",
+    "static/js/2.1cd2fe4f.chunk.js.map": "/portfolio/static/js/2.1cd2fe4f.chunk.js.map",
     "index.html": "/portfolio/index.html",
-    "precache-manifest.38b1a0c46e4788b72007eef71c0b4981.js": "/portfolio/precache-manifest.38b1a0c46e4788b72007eef71c0b4981.js",
+    "precache-manifest.b91810f77fab0750e8585b933f53c226.js": "/portfolio/precache-manifest.b91810f77fab0750e8585b933f53c226.js",
     "service-worker.js": "/portfolio/service-worker.js",
     "static/css/2.67eb4ace.chunk.css.map": "/portfolio/static/css/2.67eb4ace.chunk.css.map",
-    "static/css/main.9457af17.chunk.css.map": "/portfolio/static/css/main.9457af17.chunk.css.map",
-    "static/js/2.f6a934db.chunk.js.LICENSE": "/portfolio/static/js/2.f6a934db.chunk.js.LICENSE",
+    "static/css/main.ddc48037.chunk.css.map": "/portfolio/static/css/main.ddc48037.chunk.css.map",
+    "static/js/2.1cd2fe4f.chunk.js.LICENSE": "/portfolio/static/js/2.1cd2fe4f.chunk.js.LICENSE",
     "static/media/JetBrainsMono-Bold-Italic.woff2": "/portfolio/static/media/JetBrainsMono-Bold-Italic.1a1c60e4.woff2",
     "static/media/JetBrainsMono-Bold.woff2": "/portfolio/static/media/JetBrainsMono-Bold.4ec2869f.woff2",
     "static/media/JetBrainsMono-ExtraBold-Italic.woff2": "/portfolio/static/media/JetBrainsMono-ExtraBold-Italic.cb497310.woff2",
@@ -40,8 +40,8 @@
   "entrypoints": [
     "static/js/runtime-main.5cec9bc0.js",
     "static/css/2.67eb4ace.chunk.css",
-    "static/js/2.f6a934db.chunk.js",
-    "static/css/main.9457af17.chunk.css",
-    "static/js/main.7a982724.chunk.js"
+    "static/js/2.1cd2fe4f.chunk.js",
+    "static/css/main.ddc48037.chunk.css",
+    "static/js/main.65fd2d08.chunk.js"
   ]
 }
